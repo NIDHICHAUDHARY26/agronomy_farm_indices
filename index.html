@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAU Farm Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Gujarati:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <span class="logo">🌾</span>
+    <div>
+      <h1 data-i18n="title"></h1>
+      <small data-i18n="subtitle"></small>
+    </div>
+  </div>
+  <div class="controls">
+    <label><span data-i18n="lang"></span>
+      <select id="lang">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="gu">ગુજરાતી</option>
+      </select></label>
+    <label><span data-i18n="month"></span><select id="month"></select></label>
+    <label><span data-i18n="index"></span><select id="index"></select></label>
+    <button id="theme" class="iconbtn" title="Theme">🌓</button>
+  </div>
+</header>
+
+<main>
+  <section class="kpis" id="kpis"></section>
+
+  <section class="card summaryCard">
+    <div class="cardhead"><h2>📝 <span data-i18n="summary"></span></h2><span class="badge" id="modeBadge"></span></div>
+    <p id="summary" class="summaryText"></p>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="cardhead"><h2>🗺️ <span data-i18n="map"></span></h2></div>
+      <div id="map"></div>
+    </div>
+    <div class="card">
+      <div class="cardhead"><h2>📍 <span data-i18n="plot"></span></h2></div>
+      <div id="plotInfo"></div>
+      <div class="chartbox"><canvas id="chartIdx"></canvas></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="cardhead"><h2>📈 <span data-i18n="trend"></span></h2></div>
+    <div class="chartbox tall"><canvas id="chartTrend"></canvas></div>
+  </section>
+
+  <section class="card">
+    <div class="cardhead"><h2>🟩 <span data-i18n="cal"></span></h2></div>
+    <p class="note" data-i18n="cal_note"></p>
+    <div class="scroll" id="calendar"></div>
+    <div id="calLegend"></div>
+  </section>
+
+  <section class="card">
+    <div class="cardhead">
+      <h2>📊 <span data-i18n="stats"></span></h2>
+      <div class="tools">
+        <input id="search" type="search" data-i18n-ph="search">
+        <button id="dlStats" class="btn" data-i18n="dl"></button>
+        <a id="dlAll" class="btn ghost" href="data/zonal_stats.csv" download data-i18n="dlAll"></a>
+      </div>
+    </div>
+    <div class="scroll" id="statsTable"></div>
+  </section>
+
+</main>
+
+<button id="chatBtn" title="Chat">💬</button>
+<div id="chatPanel" hidden>
+  <div class="chatHead"><span id="chatTitle"></span><button id="chatClose">×</button></div>
+  <div id="chatLog"></div>
+  <div id="chatPrev"></div>
+  <div class="chatForm">
+    <label class="attach" title="Photo">📷<input type="file" id="chatFile" accept="image/*" hidden></label>
+    <input id="chatInput" type="text" autocomplete="off">
+    <button id="chatSend">➤</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

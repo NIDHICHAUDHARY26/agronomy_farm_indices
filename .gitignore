@@ -1,0 +1,23 @@
+.env
+venv/
+__pycache__/
+*-key.json
+*.shp
+*.dbf
+*.shx
+*.cpg
+*.prj
+# Local Netlify folder
+.netlify
+.env
+venv/
+__pycache__/
+.netlify/
+amnex1-*.json
+.env
+venv/
+__pycache__/
+.netlify/
+netlify/
+amnex1-*.json
+BACA farm map/

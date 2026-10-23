@@ -1,0 +1,360 @@
+{
+  "months": {
+    "2026-01": {
+      "mode": "optical",
+      "clear_fraction": 1.0,
+      "s2_images": 30,
+      "s1_images": 3,
+      "landsat_images": 8
+    },
+    "2026-02": {
+      "mode": "optical",
+      "clear_fraction": 1.0,
+      "s2_images": 20,
+      "s1_images": 1,
+      "landsat_images": 6
+    },
+    "2026-03": {
+      "mode": "optical",
+      "clear_fraction": 1.0,
+      "s2_images": 32,
+      "s1_images": 3,
+      "landsat_images": 8
+    },
+    "2026-04": {
+      "mode": "optical",
+      "clear_fraction": 1.0,
+      "s2_images": 28,
+      "s1_images": 2,
+      "landsat_images": 8
+    },
+    "2026-05": {
+      "mode": "optical",
+      "clear_fraction": 1.0,
+      "s2_images": 29,
+      "s1_images": 3,
+      "landsat_images": 8
+    },
+    "2026-06": {
+      "mode": "optical",
+      "clear_fraction": 1.0,
+      "s2_images": 31,
+      "s1_images": 3,
+      "landsat_images": 6
+    },
+    "2026-07": {
+      "mode": "gapfill",
+      "clear_fraction": 0.0,
+      "gapfill_clear_fraction": 1.0,
+      "s2_images": 6,
+      "s1_images": 2,
+      "landsat_images": 4
+    },
+    "2026-08": {
+      "mode": "gapfill",
+      "clear_fraction": 0.0,
+      "gapfill_clear_fraction": 1.0,
+      "s2_images": 2,
+      "s1_images": 3,
+      "landsat_images": 1
+    },
+    "2026-09": {
+      "mode": "optical",
+      "clear_fraction": 1.0,
+      "s2_images": 22,
+      "s1_images": 3,
+      "landsat_images": 5
+    }
+  },
+  "generated_at": "2026-10-23T16:12:15",
+  "min_clear_fraction": 0.6,
+  "indices": [
+    {
+      "name": "NDVI",
+      "label": "NDVI",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.1,
+        0.9
+      ]
+    },
+    {
+      "name": "EVI",
+      "label": "EVI",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "SAVI",
+      "label": "SAVI",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.1,
+        0.9
+      ]
+    },
+    {
+      "name": "OSAVI",
+      "label": "OSAVI",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.1,
+        0.9
+      ]
+    },
+    {
+      "name": "MSAVI2",
+      "label": "MSAVI2",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.1,
+        0.9
+      ]
+    },
+    {
+      "name": "GNDVI",
+      "label": "GNDVI",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.1,
+        0.9
+      ]
+    },
+    {
+      "name": "ARVI",
+      "label": "ARVI",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.1,
+        0.9
+      ]
+    },
+    {
+      "name": "CIgreen",
+      "label": "CIgreen",
+      "group": "Vegetation",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        0,
+        6
+      ]
+    },
+    {
+      "name": "NDRE",
+      "label": "NDRE",
+      "group": "Chlorophyll",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        -0.1,
+        0.6
+      ]
+    },
+    {
+      "name": "CIre",
+      "label": "CIre",
+      "group": "Chlorophyll",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        0,
+        8
+      ]
+    },
+    {
+      "name": "MTCI",
+      "label": "MTCI",
+      "group": "Chlorophyll",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        0,
+        5
+      ]
+    },
+    {
+      "name": "NDVI705",
+      "label": "NDVI705",
+      "group": "Chlorophyll",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        -0.1,
+        0.6
+      ]
+    },
+    {
+      "name": "PSRI",
+      "label": "PSRI",
+      "group": "Chlorophyll",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        -0.2,
+        0.5
+      ]
+    },
+    {
+      "name": "NDWI",
+      "label": "NDWI",
+      "group": "Water",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        -0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "MNDWI",
+      "label": "MNDWI",
+      "group": "Water",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        -0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "NDMI",
+      "label": "NDMI",
+      "group": "Water",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        -0.4,
+        0.6
+      ]
+    },
+    {
+      "name": "BSI",
+      "label": "BSI",
+      "group": "Soil",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        -0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "NDTI",
+      "label": "NDTI",
+      "group": "Soil",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        -0.1,
+        0.4
+      ]
+    },
+    {
+      "name": "SI",
+      "label": "SI",
+      "group": "Soil",
+      "sensor": "S2",
+      "res": 10,
+      "range": [
+        0,
+        0.4
+      ]
+    },
+    {
+      "name": "ClayRatio",
+      "label": "ClayRatio",
+      "group": "Soil",
+      "sensor": "S2",
+      "res": 20,
+      "range": [
+        0.8,
+        1.6
+      ]
+    },
+    {
+      "name": "VV",
+      "label": "VV (dB)",
+      "group": "Radar",
+      "sensor": "S1",
+      "res": 10,
+      "range": [
+        -25,
+        -5
+      ]
+    },
+    {
+      "name": "VH",
+      "label": "VH (dB)",
+      "group": "Radar",
+      "sensor": "S1",
+      "res": 10,
+      "range": [
+        -30,
+        -10
+      ]
+    },
+    {
+      "name": "VH_VV",
+      "label": "VH-VV (dB)",
+      "group": "Radar",
+      "sensor": "S1",
+      "res": 10,
+      "range": [
+        -20,
+        -5
+      ]
+    },
+    {
+      "name": "RVI",
+      "label": "RVI",
+      "group": "Radar",
+      "sensor": "S1",
+      "res": 10,
+      "range": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "SoilWetness_rel",
+      "label": "Relative soil wetness (0-1)",
+      "group": "Soil moisture",
+      "sensor": "DERIVED",
+      "res": 10,
+      "range": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "LST",
+      "label": "Land surface temp (C)",
+      "group": "Thermal",
+      "sensor": "LANDSAT",
+      "res": 30,
+      "range": [
+        15,
+        50
+      ]
+    }
+  ],
+  "gapfill_days": 45
+}
